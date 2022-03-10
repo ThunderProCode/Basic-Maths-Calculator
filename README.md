@@ -15,7 +15,8 @@ Calculate area and perimeter for basic geometric figures.
 ## Status 
 
 - Square calculator working correctly
-- Triangle calculator not working yet
-- Has a bug when typying a big number
+- Triangle calculator working correctly
+- Circle calculator working correctly
+- Bug when typing a big number
 
 > Hector Acosta 

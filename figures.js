@@ -14,7 +14,7 @@ function trianglePerimeter(triangleSide, triangleSide2, triangelBase) {
 
 function triangleArea(triangleSide, triangleSide2, triangelBase) {
     const sP = (triangleSide + triangleSide2 + triangelBase) / 2; 
-    return Math.sqrt(sP * (sP - triangleSide) * (sP - triangleSide2) * (sP - triangelBase));
+    return (Math.sqrt(sP * (sP - triangleSide) * (sP - triangleSide2) * (sP - triangelBase))).toFixed(4);
 }
 
 //Circle Code
@@ -47,18 +47,22 @@ function calculateSquareArea() {
 
 //Triangle
 function calculateTrianglePerimeter() {
+
     const side1 = document.getElementById("triangleSide1Input");
-    const side2 = document.getElementById("triangleSide3Input");
+    const side2 = document.getElementById("triangleSide2Input");
     const base = document.getElementById("triangleBaseInput");
 
-    const perimeter = trianglePerimeter(side1,side2,base);
-    alert(perimeter);
+    const perimeter = trianglePerimeter(side1.value, side2.value , base.value);
+
+    document.getElementById("triangle-perimeter-answer").innerHTML = perimeter + "cm";
 }
 
 function calculateTriangleArea() {
     const side1 = document.getElementById("triangleSide1Input");
-    const side2 = document.getElementById("triangleSide3Input");
+    const side2 = document.getElementById("triangleSide2Input");
     const base = document.getElementById("triangleBaseInput");
+    const area = triangleArea(side1.value,side2.value,base.value);
+    document.getElementById("triangle-area-answer").innerHTML = area + "cm^2";
 }
 
 //Circle 
