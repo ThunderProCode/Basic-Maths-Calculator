@@ -19,4 +19,7 @@ Calculate area and perimeter for basic geometric figures.
 - Circle calculator working correctly
 - Bug when typing a big number
 
+## Live Demo
+[Click Here](https://thunderprocode.github.io/js-course/)
+
 > Hector Acosta 
