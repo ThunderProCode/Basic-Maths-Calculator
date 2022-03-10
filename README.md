@@ -1,6 +1,6 @@
 # Platzi js-course
 
-Platzi's JS course project. Project made to JS.
+Platzi's JS course project. Project made to practice JS.
 
 ## Geomtric Figures Calculator
 
