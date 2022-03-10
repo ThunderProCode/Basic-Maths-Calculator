@@ -29,16 +29,13 @@ body {
     border-radius: 15px;
 }
 
-.square-container {
-    height: 170px;
+.title-container{
+    display: flex;
+    align-items: center;
 }
 
-.triangle-container {
-    height: 340px;
-}
-
-.circle-container {
-    height: 170px;
+.container-title {
+    margin-left: 8px;
 }
 
 .input-form {
@@ -49,7 +46,7 @@ body {
 
 .input-form label {
     align-self: flex-start;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .form-control {
@@ -58,12 +55,27 @@ body {
     color: #000;
 }
 
-.input-form button {
-    width: 100%;
-    margin: 8px;
+.perimeter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.answer-box{
+.buttons-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-form button {
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    padding: 4px;
+}
+
+.answer-box {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }

@@ -23,11 +23,11 @@ function circleDiameter(radio){
 }
 
 function circlePerimeter(circleRadio) {
-    return circleDiameter(circleRadio) * Math.PI;
+    return (circleDiameter(circleRadio) * Math.PI).toFixed(4);
 }
 
 function circleArea(circleRadio) {
-    return (circleRadio * circleRadio) * Math.PI;
+    return ((circleRadio * circleRadio) * Math.PI).toFixed(4);
 }
 
 //Square
@@ -63,13 +63,13 @@ function calculateTriangleArea() {
 
 //Circle 
 function calculateCirclePerimeter() {
-    const radio = document.getElementById("circleInput");
-    const perimeter = circlePerimeter(radio);
-    alert(perimeter);
+    const radio = document.getElementById("circleRadioInput");
+    const perimeter = circlePerimeter(radio.value);
+    document.getElementById("circle-perimeter-answer").innerHTML = perimeter + "cm";
 }
 
 function calculateCircleArea() {
-  const radio = document.getElementById("circleInput");
-  const area = circleArea(radio);
-  alert(area);
+  const radio = document.getElementById("circleRadioInput");
+  const area = circleArea(radio.value);
+  document.getElementById("circle-area-answer").innerHTML = area + "cm^2";
 }
