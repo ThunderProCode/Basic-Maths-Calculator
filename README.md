@@ -1,8 +1,16 @@
-# js-course
+# Platzi js-course
 
-## Practice #1: Geometric figures
+Platzi's JS course project. Project made to JS.
 
-- 1st step: Define the formulas
-- 2nd step: Implement formulas in javascript
-- 3rd step: create functions 
-- 4th step: Integrate JS with HTML
+## Geomtric Figures Calculator
+
+Calculate area and perimeter for basic geomtric figures.
+
+## Built using: 
+
+- HTML
+- CSS
+- Javascript
+
+
+> Hector Acosta 
