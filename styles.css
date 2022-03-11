@@ -21,7 +21,7 @@ body {
 .card-container {
     margin-top: 36px;
     padding: 12px;
-    width: 400px;
+    width: 600px;
     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
     font-size: 12px;
     border-radius: 15px;
@@ -68,7 +68,7 @@ body {
 }
 
 .buttons-container {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -76,7 +76,7 @@ body {
 .input-form button {
     color: #8e8e93;
     background-color: #636366;
-    width: 100px;
+    width: 200px;
     border-radius: 4px;
     border: none;
     padding: 4px;
@@ -90,7 +90,7 @@ body {
 }
 
 .answer-box p {
-    margin: 4px;
+    margin: 8px;
 }
 
 @media (max-width: 640px) {    

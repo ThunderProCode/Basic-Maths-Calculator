@@ -1,6 +1,6 @@
-# Platzi js-course
+# Basic Math's Calculator Project
 
-Platzi's JS course project. Project made to practice JS.
+A JS course project. Project made to practice JS.
 
 ## Geometric Figures Calculator
 
