@@ -17,6 +17,8 @@ function triangleArea(triangleSide, triangleSide2, triangelBase) {
     return (Math.sqrt(sP * (sP - triangleSide) * (sP - triangleSide2) * (sP - triangelBase))).toFixed(4);
 }
 
+
+
 //Circle Code
 function circleDiameter(radio){
     return radio * 2;
