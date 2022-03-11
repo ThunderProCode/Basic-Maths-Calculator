@@ -18,6 +18,6 @@ Calculate percemtages and discounts calculator.
 - Bootstrap
 
 ## Live Demo
-[Click Here](https://thunderprocode.github.io/js-course/)
+[Click Here](https://thunderprocode.github.io/Basic-Maths-Calculator/)
 
 > Hector Acosta 
