@@ -1,10 +1,15 @@
-function getDiscount(price,discount){
+function discount (price,discount) {
     const priceWithDiscount = ((price * (100 - discount))/100);
     return priceWithDiscount;
 }
 
-console.log(getDiscount(180,15));
+function getDiscount(){
+    const price = document.getElementById("priceInput").value;
+    const inputDiscount = document.getElementById("discountInput").value;
+    const finalPrice = discount(price,inputDiscount);
+    document.getElementById("final-price").innerHTML = finalPrice;
+}
 
-function getPercentage(percentage, number){
-    
+function percentage(percentage, number){
+
 }
