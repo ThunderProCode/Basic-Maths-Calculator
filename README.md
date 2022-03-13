@@ -1,14 +1,18 @@
 # Basic Math's Calculator Project
 
-A JS course project. Project made to practice JS.
+Contains basic calculator functions for geomtry, discounts , statistics and salaries.
 
 ## Geometric Figures Calculator
 
 Calculate area and perimeter for basic geometric figures.
 
-## Percentages and discounts calculator
+## Discounts calculator
 
-Calculate percemtages and discounts calculator. 
+Calculate discounts.
+
+## Basic Statistics Calculator
+
+Calculate average, median and mean.
 
 ## Built using: 
 
