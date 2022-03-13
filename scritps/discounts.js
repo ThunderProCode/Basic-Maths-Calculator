@@ -7,9 +7,17 @@ function getDiscount(){
     const price = document.getElementById("priceInput").value;
     const inputDiscount = document.getElementById("discountInput").value;
     const finalPrice = discount(price,inputDiscount);
-    document.getElementById("final-price").innerHTML = finalPrice;
+    const finalPriceCoupon = hasCuppon(finalPrice);
+    document.getElementById("final-price").innerHTML = finalPriceCoupon;
 }
 
-function percentage(percentage, number){
-
+function hasCuppon(price){
+    const coupon = document.getElementById("couponInput").value;
+    if(coupon === "rgxvndl"){
+        return (price * (100 - 10))/100;
+    }else if( coupon === "oniphtm"){
+        return (price * (100 - 20))/100;
+    }else {
+        return price;
+    }
 }
