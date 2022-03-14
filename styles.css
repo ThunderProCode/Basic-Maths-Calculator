@@ -91,6 +91,24 @@ body {
     text-align: left;
 }
 
+.page-footer {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-footer p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
 @media (max-width: 640px) {    
    
     .show-card {
@@ -98,4 +116,4 @@ body {
         height: 300px;
     }
 
-  }
+}

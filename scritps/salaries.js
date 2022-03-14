@@ -34,6 +34,7 @@ function updateSalariesList(){
 function addPerson(){
     const inputName = document.getElementById("name-input").value;
     const inputSalary = document.getElementById("salary-input").value;
+    const form = document.getElementById("input-form");
 
     if(validateInput(inputName) && validateInput(inputSalary)){
         persons.push({
