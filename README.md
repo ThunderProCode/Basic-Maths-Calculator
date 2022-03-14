@@ -14,6 +14,10 @@ Calculate discounts.
 
 Calculate average, median and mean.
 
+## Salaries calculator
+
+Add persons salaries to a list, calculate the salaries median and the 10% salaries median.
+
 ## Built using: 
 
 - HTML

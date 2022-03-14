@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics</title>
+    <title>Salaries</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/statistics.css">
+    <link rel="stylesheet" href="../styles/salaries.css">
 
-    <script src="../scritps/statistics.js"></script>
+    <script src="../scritps/salaries.js"></script>
 
 </head>
 <body>
@@ -47,9 +47,9 @@
 
         <div class="page-title-container">
             <h2>
-                Basic statistics
+                Salaries Calculator
             </h2>
-            <p>Calculate mean,median and mode</p>
+            <p>Calculate salaries median and top 10% salaries median</p>
         </div>
 
         <div class="card-container">
@@ -61,62 +61,43 @@
                 viewBox="0 0 16 16">
                     <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
                   </svg>
-                <h3 class="container-title">Statistics</h3>
+                <h3 class="container-title">Salaries</h3>
             </div>
 
-            <form class="input-form">
-                <label for="dataInput">Type each data separated by comma (,)
-                    <br>Dont type comma (,) at the end of data:
-                </label>
-                <input id="dataInput" type="text" 
-                class="form-control"/>
+            <div class="form-container">
+              <form class="input-form">
+                <label for="name-input">Name: </label>
+                  <input id="name-input" type="text" 
+                  class="form-control"/>
 
-                <div class="buttons-container">
+                  <label for="salary-input">Salary: </label>
+                  <input id="salary-input" type="number" 
+                  class="form-control"/>
                     
-                    <div class="result-container">
+                  <button type="button" onclick="addPerson()" 
+                  class="add-button">
+                        Add
+                  </button>
 
-                        <button type="button" onclick="getAverage()" 
-                        class="calculate-result-button">
-                            Get mean
-                        </button>
+              </form>
 
-                        <div class="answer-box">
-                            <p id="average-result"></p>
-                        </div>
-
-                    </div>
-
-                    <div class="result-container">
-
-                        <button type="button" onclick="getMedian()" 
-                        class="calculate-result-button">
-                            Get median
-                        </button>
-
-                        <div class="answer-box">
-                            <p id="median-result"></p>
-                        </div>
-
-                    </div>
-
-                    <div class="result-container">
-
-                        <button type="button" onclick="getMode()" 
-                        class="calculate-result-button">
-                            Get mode
-                        </button>
-                            
-                        <div class="answer-box">
-                            <p id="mode-result"></p>
-                        </div>
-
-                    </div>
-
+              <div class="persons-container">
+                <p class="salaries-title">Persons list</p>
+                <div class="salaries-list">
+                  <ul id="persons-ul">
+                  </ul>
                 </div>
+              </div>
+            </div>
 
-                </div>
-
-            </form>
+            <div class="result-container">
+              <button onclick="getMedian()">
+                Get median
+              </button>
+              <div class="median-container">
+                <p id="median-result"></p>
+              </div>
+            </div>
         </div>
 
       </section>
