@@ -30,9 +30,13 @@ body {
 .page-title-container {
     display: flex;
     flex-direction: column;
-    place-items: center;
+    margin-bottom: 24px;
 }
 
+.page-title-container h2 {
+    text-align: center;
+    font-weight: bold;
+}
 
 .card-container {
     padding: 12px;
@@ -45,7 +49,6 @@ body {
     -webkit-backdrop-filter: blur( 17.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
 }
 
 .title-container{
