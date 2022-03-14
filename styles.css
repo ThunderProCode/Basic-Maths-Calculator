@@ -16,18 +16,34 @@ body {
 }
 
 .main-container {
+    margin-top: 21px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
 }
 
-.column-card {
+.cards-container {
+    margin-top: 80px;
+}
+
+.container-row {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-column {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    flex: 1;
+    margin-bottom: 16px;
 }
 
 .show-card {
@@ -35,7 +51,6 @@ body {
     flex-direction: column;
     width: 450px;
     height: 350px;
-
     align-items: center;
     border-radius: 8px;
     
@@ -77,14 +92,10 @@ body {
 }
 
 @media (max-width: 640px) {    
-    
-    .card-container {
-        width: 300px;
-    }    
-    
-    .input-form button {
-        width: 100px;
-        margin: 4px;
-    }   
+   
+    .show-card {
+        width: 330px;
+        height: 300px;
+    }
 
   }
