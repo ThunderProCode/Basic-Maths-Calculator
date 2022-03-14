@@ -46,6 +46,7 @@ function addPerson(){
     }
 }
 
+//Returns only the salaries from the persons list
 function getSalaries(){
     const salaries = persons.map(
         function (person) {
@@ -55,6 +56,7 @@ function getSalaries(){
     return salaries;
 }
 
+//Sorts the salaries list 
 function sortSalaries(){
     const sortedSalaries = getSalaries().sort(
         function (salaryA, salaryB) {
@@ -64,8 +66,9 @@ function sortSalaries(){
     return sortedSalaries;
 }
 
+//Returns the median from the salaries list
 function getSalariesMedian(salariesList){
-    const mid = parseInt(getSalaries().length / 2);
+    const mid = parseInt(salariesList.length / 2);
 
     if(oddOrEven(salariesList.length)){
         const midPerson1 = salariesList[mid - 1];
@@ -78,13 +81,31 @@ function getSalariesMedian(salariesList){
     }
 }
 
+// Shows the median in the HTML
 function getMedian(){
     const median = getSalariesMedian(sortSalaries());
     document.getElementById("median-result").innerHTML = median;
 }
 
+//--- TOP 10 MEDIAN ---------
 
+//return top 10% of the salaries 
+function top10Salaries(){
+    const spliceStart = parseInt((sortSalaries().length * 90)/100);
+    const spliceCount = parseInt((sortSalaries().length - spliceStart));
+    const top10SalariesList = sortSalaries().splice(
+        spliceStart,
+        spliceCount
+    );
+    return top10SalariesList;
+}
 
+//Shows the top 10% salaries median in HTML
+
+function getTopMedian(){
+    const median = getSalariesMedian(top10Salaries());
+    document.getElementById("top-median-result").innerHTML = median ;
+}
 
 
 

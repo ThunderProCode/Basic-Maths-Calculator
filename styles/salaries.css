@@ -23,24 +23,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px;
 }
 
 .page-title-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .page-title-container h2 {
-    text-align: center;
     font-weight: bold;
 }
 
 .card-container {
     padding: 12px;
-    width: 600px;
+    width: 800px;
     font-size: 12px;
 
     background: rgba( 239, 240, 249, 0.9 );
@@ -51,6 +51,25 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.title-container{
+    display: flex;
+    justify-content: start;
+}
+
+.title-container svg {
+    margin-top: 4px;
+    justify-self: center;
+}
+
+.title-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-title {
+    margin-left: 8px;
+}
+
 .form-container {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -59,7 +78,7 @@ body {
 
 .input-form {
     width: 100%;
-    height: 120px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,14 +86,17 @@ body {
 
 .input-form label {
     width: 100%;
+    margin-bottom: 8px;
 }
 
 .input-form .form-control {
     border: none;
     color: #000;
+    margin-bottom: 8px;
 }
 
 .input-form button {
+
     margin-top: 8px;
     width: 100%;
     border-radius: 4px;
@@ -82,6 +104,7 @@ body {
     color: black;
     background: rgb(226,231,241);
     font-weight: bold;
+    flex-grow: 1;
 }
 
 .input-form button:hover {
@@ -94,17 +117,28 @@ body {
 }
 
 .persons-container .salaries-title {
-    margin-bottom: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .salaries-list{
     overflow: auto;
     margin: 0;
-    padding: 4px;
+    padding: 8px;
     width: 100%;
-    height: 120px;
+    height: 160px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 4px;
+}
+
+.salaries-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.salaries-list ul li {
+    text-align: start;
 }
 
 .result-container {
@@ -114,6 +148,7 @@ body {
     display: grid;
     grid-template-columns: 50% 1fr;
     column-gap: 8px;
+    row-gap: 8px;
 }
 
 .result-container button {
@@ -142,10 +177,4 @@ body {
     .card-container {
         width: 300px;
     }    
-    
-    .input-form button {
-        width: 100px;
-        margin: 4px;
-    }   
-
   }
