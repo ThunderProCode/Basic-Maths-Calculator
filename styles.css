@@ -19,12 +19,62 @@ body {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    display: grid;
-    place-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
+.column-card {
+    display: flex;
+    justify-content: center;
+}
+
+.show-card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 350px;
+
+    align-items: center;
+    border-radius: 8px;
+    
+    background: rgba( 227, 227, 231, 1 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+
+
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.41);
+}
+
+.show-card:hover {
+    border: 1px solid #6f7275;
+}
+
+.show-card a {
+    height: 100%;
+    display: block;
+}
+
+.cards-container .show-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+}
+
+.cards-container .show-card h3 {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards-container .show-card p {
+    margin-top: 4px;
+    font-size: 14px;
+    text-align: left;
+}
 
 @media (max-width: 640px) {    
     
